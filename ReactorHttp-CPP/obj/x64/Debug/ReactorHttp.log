@@ -1,0 +1,62 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8028: 中间目录(E:\serverProject\cppServer\ReactorHttp\ReactorHttp\obj\x64\Debug\)包含从另一个项目(ReactorHttp.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  正在验证源
+  正在将源远程复制到“192.168.232.128”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  Buffer.cpp
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\Buffer.cpp(78,22): warning : conversion from ‘size_t’ {aka ‘long unsigned int’} to ‘int’ may change value [-Wconversion]
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\Buffer.cpp(78,22): warning :    78 |     int size = strlen(data);
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\Buffer.cpp(78,22): warning :       |                ~~~~~~^~~~~~
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\Buffer.cpp(100,23): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\Buffer.cpp(100,23): warning :   100 |     int result = readv(fd, vec, 2);
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\Buffer.cpp(100,23): warning :       |                  ~~~~~^~~~~~~~~~~~
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\Buffer.cpp(136,25): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\Buffer.cpp(136,25): warning :   136 |         int count = send(socket, m_data + m_readPos, readable, MSG_NOSIGNAL);
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\Buffer.cpp(136,25): warning :       |                     ~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Channel.cpp
+  Dispatcher.cpp
+  EpollDispatcher.cpp
+  EventLoop.cpp
+  HttpRequest.cpp
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(71,24): warning : conversion from ‘long int’ to ‘int’ may change value [-Wconversion]
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(71,24): warning :    71 |     int lineSize = end - start;
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(71,24): warning :       |                    ~~~~^~~~~~~
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(97,28): warning : conversion from ‘long int’ to ‘int’ may change value [-Wconversion]
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(97,28): warning :    97 |         int lineSize = end - start;
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(97,28): warning :       |                        ~~~~^~~~~~~
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(102,33): warning : conversion from ‘long int’ to ‘int’ may change value [-Wconversion]
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(102,33): warning :   102 |             int keyLen = middle - start;
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(102,33): warning :       |                          ~~~~~~~^~~~~~~
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(103,41): warning : conversion from ‘long int’ to ‘int’ may change value [-Wconversion]
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(103,41): warning :   103 |             int valueLen = end - middle - 2;
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(103,41): warning :       |                            ~~~~~~~~~~~~~^~~
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(231,50): warning : conversion from ‘int’ to ‘char’ may change value [-Wconversion]
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(231,50): warning :   231 |             str.append(1, hexToDec(from[1]) * 16 + hexToDec(from[2]));
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(231,50): warning :       |                           ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(343,23): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(343,23): warning :   343 |         int len = read(fd, buf, sizeof buf);
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(343,23): warning :       |                   ~~~~^~~~~~~~~~~~~~~~~~~~~
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(389,24): warning : conversion from ‘long int’ to ‘int’ may change value [-Wconversion]
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(389,24): warning :   389 |     int length = space - start;
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\HttpRequest.cpp(389,24): warning :       |                  ~~~~~~^~~~~~~
+  Httpresponse.cpp
+  main.cpp
+  PollDispatcher.cpp
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\PollDispatcher.cpp(41,31): warning : conversion from ‘int’ to ‘short int’ may change value [-Wconversion]
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\PollDispatcher.cpp(41,31): warning :    41 |             m_fds[i].events = events;
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\PollDispatcher.cpp(41,31): warning :       |                               ^~~~~~
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\PollDispatcher.cpp(92,31): warning : conversion from ‘int’ to ‘short int’ may change value [-Wconversion]
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\PollDispatcher.cpp(92,31): warning :    92 |             m_fds[i].events = events;
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\PollDispatcher.cpp(92,31): warning :       |                               ^~~~~~
+  SelectDispatcher.cpp
+  TcpConnection.cpp
+  TcpServer.cpp
+  ThreadPool.cpp
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\ThreadPool.cpp(54,17): warning : operation on ‘((ThreadPool*)this)->ThreadPool::m_index’ may be undefined [-Wsequence-point]
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\ThreadPool.cpp(54,17): warning :    54 |         m_index = ++m_index % m_threadNum;
+E:\serverProject\cppServer\ReactorHttp\ReactorHttp\ThreadPool.cpp(54,17): warning :       |         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+  WorkerThread.cpp
+  正在链接对象
+  ReactorHttp.vcxproj -> E:\serverProject\cppServer\ReactorHttp\ReactorHttp\bin\x64\Debug\ReactorHttp-cpp.out

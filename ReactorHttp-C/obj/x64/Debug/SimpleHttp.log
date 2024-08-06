@@ -1,0 +1,397 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.232.128”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  Buffer.c
+E:\serverProject\SimpleHttp\Buffer.c(8,32): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\Buffer.c(8,32): warning :     8 |   buffer->data = (char*)malloc(size);
+E:\serverProject\SimpleHttp\Buffer.c(8,32): warning :       |                                ^~~~
+E:\serverProject\SimpleHttp\Buffer.c(11,3): warning : implicit declaration of function ‘memset’ [-Wimplicit-function-declaration]
+E:\serverProject\SimpleHttp\Buffer.c(11,3): warning :    11 |   memset(buffer->data, 0, size);
+E:\serverProject\SimpleHttp\Buffer.c(11,3): warning :       |   ^~~~~~
+E:\serverProject\SimpleHttp\Buffer.c(11,3): warning : incompatible implicit declaration of built-in function ‘memset’
+E:\serverProject\SimpleHttp\Buffer.c(2,1): message : include ‘<string.h>’ or provide a declaration of ‘memset’
+E:\serverProject\SimpleHttp\Buffer.c(2,1): message :     1 | #include "Buffer.h"
+E:\serverProject\SimpleHttp\Buffer.c(2,1): message :   +++ |+#include <string.h>
+E:\serverProject\SimpleHttp\Buffer.c(2,1): message :     2 |
+E:\serverProject\SimpleHttp\Buffer.c(11,27): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\Buffer.c(11,27): warning :    11 |   memset(buffer->data, 0, size);
+E:\serverProject\SimpleHttp\Buffer.c(11,27): warning :       |                           ^~~~
+E:\serverProject\SimpleHttp\Buffer.c(36,3): warning : implicit declaration of function ‘memcpy’ [-Wimplicit-function-declaration]
+E:\serverProject\SimpleHttp\Buffer.c(36,3): warning :    36 |   memcpy(buffer->data, buffer->data + buffer->readPos, readable);
+E:\serverProject\SimpleHttp\Buffer.c(36,3): warning :       |   ^~~~~~
+E:\serverProject\SimpleHttp\Buffer.c(36,3): warning : incompatible implicit declaration of built-in function ‘memcpy’
+E:\serverProject\SimpleHttp\Buffer.c(36,3): message : include ‘<string.h>’ or provide a declaration of ‘memcpy’
+E:\serverProject\SimpleHttp\Buffer.c(36,56): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\Buffer.c(36,56): warning :    36 |   memcpy(buffer->data, buffer->data + buffer->readPos, readable);
+E:\serverProject\SimpleHttp\Buffer.c(36,56): warning :       |                                                        ^~~~~~~~
+E:\serverProject\SimpleHttp\Buffer.c(44,52): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\Buffer.c(44,52): warning :    44 |   void*temp=realloc(buffer->data, buffer->capacity + size);
+E:\serverProject\SimpleHttp\Buffer.c(44,52): warning :       |                                   ~~~~~~~~~~~~~~~~~^~~~~~
+E:\serverProject\SimpleHttp\Buffer.c(48,3): warning : incompatible implicit declaration of built-in function ‘memset’
+E:\serverProject\SimpleHttp\Buffer.c(48,3): warning :    48 |   memset(temp + buffer->capacity, 0, size);
+E:\serverProject\SimpleHttp\Buffer.c(48,3): warning :       |   ^~~~~~
+E:\serverProject\SimpleHttp\Buffer.c(48,3): message : include ‘<string.h>’ or provide a declaration of ‘memset’
+E:\serverProject\SimpleHttp\Buffer.c(48,38): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\Buffer.c(48,38): warning :    48 |   memset(temp + buffer->capacity, 0, size);
+E:\serverProject\SimpleHttp\Buffer.c(48,38): warning :       |                                      ^~~~
+E:\serverProject\SimpleHttp\Buffer.c(75,2): warning : incompatible implicit declaration of built-in function ‘memcpy’
+E:\serverProject\SimpleHttp\Buffer.c(75,2): warning :    75 |  memcpy(buffer->data + buffer->writePos, data, size);
+E:\serverProject\SimpleHttp\Buffer.c(75,2): warning :       |  ^~~~~~
+E:\serverProject\SimpleHttp\Buffer.c(75,2): message : include ‘<string.h>’ or provide a declaration of ‘memcpy’
+E:\serverProject\SimpleHttp\Buffer.c(75,48): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\Buffer.c(75,48): warning :    75 |  memcpy(buffer->data + buffer->writePos, data, size);
+E:\serverProject\SimpleHttp\Buffer.c(75,48): warning :       |                                                ^~~~
+E:\serverProject\SimpleHttp\Buffer.c(82,13): warning : implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+E:\serverProject\SimpleHttp\Buffer.c(82,13): warning :    82 |  int size = strlen(data);
+E:\serverProject\SimpleHttp\Buffer.c(82,13): warning :       |             ^~~~~~
+E:\serverProject\SimpleHttp\Buffer.c(82,13): warning : incompatible implicit declaration of built-in function ‘strlen’
+E:\serverProject\SimpleHttp\Buffer.c(82,13): message : include ‘<string.h>’ or provide a declaration of ‘strlen’
+E:\serverProject\SimpleHttp\Buffer.c(82,13): warning : conversion from ‘long unsigned int’ to ‘int’ may change value [-Wconversion]
+E:\serverProject\SimpleHttp\Buffer.c(94,19): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\Buffer.c(94,19): warning :    94 |  vec[0].iov_len = writeable;
+E:\serverProject\SimpleHttp\Buffer.c(94,19): warning :       |                   ^~~~~~~~~
+E:\serverProject\SimpleHttp\Buffer.c(98,15): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+E:\serverProject\SimpleHttp\Buffer.c(98,15): warning :    98 |  int result = readv(fd, vec, 2);
+E:\serverProject\SimpleHttp\Buffer.c(98,15): warning :       |               ^~~~~
+E:\serverProject\SimpleHttp\Buffer.c(117,12): warning : implicit declaration of function ‘memmem’ [-Wimplicit-function-declaration]
+E:\serverProject\SimpleHttp\Buffer.c(117,12): warning :   117 |  char* ptr=memmem(buffer->data + buffer->readPos, bufferReadableSize(buffer), "/r/n", 2);
+E:\serverProject\SimpleHttp\Buffer.c(117,12): warning :       |            ^~~~~~
+E:\serverProject\SimpleHttp\Buffer.c(117,12): warning : initialization of ‘char *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+E:\serverProject\SimpleHttp\Buffer.c(126,15): warning : implicit declaration of function ‘send’ [-Wimplicit-function-declaration]
+E:\serverProject\SimpleHttp\Buffer.c(126,15): warning :   126 |   int count = send(socket, buffer->data + buffer->readPos, readable);
+E:\serverProject\SimpleHttp\Buffer.c(126,15): warning :       |               ^~~~
+E:\serverProject\SimpleHttp\Buffer.c(129,4): warning : implicit declaration of function ‘usleep’ [-Wimplicit-function-declaration]
+E:\serverProject\SimpleHttp\Buffer.c(129,4): warning :   129 |    usleep(1);
+E:\serverProject\SimpleHttp\Buffer.c(129,4): warning :       |    ^~~~~~
+  Channel.c
+  ChannelMap.c
+E:\serverProject\SimpleHttp\ChannelMap.c(8,44): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\ChannelMap.c(8,44): warning :     8 |  map->list = (struct Channel**)malloc(size * sizeof(struct Channel*));
+E:\serverProject\SimpleHttp\ChannelMap.c(8,44): warning :       |                                            ^
+E:\serverProject\SimpleHttp\ChannelMap.c(35,51): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\ChannelMap.c(35,51): warning :    35 |   struct Channel**temp=realloc(map->list, curSize * unitSize);
+E:\serverProject\SimpleHttp\ChannelMap.c(35,51): warning :       |                                           ~~~~~~~~^~~~~~~~~~
+E:\serverProject\SimpleHttp\ChannelMap.c(40,3): warning : implicit declaration of function ‘memset’ [-Wimplicit-function-declaration]
+E:\serverProject\SimpleHttp\ChannelMap.c(40,3): warning :    40 |   memset(&map->list[map->size], 0, (curSize - map->size) * unitSize);
+E:\serverProject\SimpleHttp\ChannelMap.c(40,3): warning :       |   ^~~~~~
+E:\serverProject\SimpleHttp\ChannelMap.c(40,3): warning : incompatible implicit declaration of built-in function ‘memset’
+E:\serverProject\SimpleHttp\ChannelMap.c(2,1): message : include ‘<string.h>’ or provide a declaration of ‘memset’
+E:\serverProject\SimpleHttp\ChannelMap.c(2,1): message :     1 | #include "ChannelMap.h"
+E:\serverProject\SimpleHttp\ChannelMap.c(2,1): message :   +++ |+#include <string.h>
+E:\serverProject\SimpleHttp\ChannelMap.c(2,1): message :     2 |
+E:\serverProject\SimpleHttp\ChannelMap.c(40,58): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\ChannelMap.c(40,58): warning :    40 |   memset(&map->list[map->size], 0, (curSize - map->size) * unitSize);
+E:\serverProject\SimpleHttp\ChannelMap.c(40,58): warning :       |                                    ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+  Dispatcher.c
+  EpollDispatcher.c
+E:\serverProject\SimpleHttp\EpollDispatcher.c(50,14): warning : conversion to ‘uint32_t’ {aka ‘unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\EpollDispatcher.c(50,14): warning :    50 |  ev.events = events;
+E:\serverProject\SimpleHttp\EpollDispatcher.c(50,14): warning :       |              ^~~~~~
+E:\serverProject\SimpleHttp\EpollDispatcher.c(85,16): warning : conversion to ‘int’ from ‘uint32_t’ {aka ‘unsigned int’} may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\EpollDispatcher.c(85,16): warning :    85 |   int events = data->events[i].events;
+E:\serverProject\SimpleHttp\EpollDispatcher.c(85,16): warning :       |                ^~~~
+E:\serverProject\SimpleHttp\EpollDispatcher.c(104,13): warning : passing argument 1 of ‘pclose’ makes pointer from integer without a cast [-Wint-conversion]
+E:\serverProject\SimpleHttp\EpollDispatcher.c(104,13): warning :   104 |  pclose(data->epfd);
+E:\serverProject\SimpleHttp\EpollDispatcher.c(104,13): warning :       |         ~~~~^~~~~~
+E:\serverProject\SimpleHttp\EpollDispatcher.c(104,13): warning :       |             |
+E:\serverProject\SimpleHttp\EpollDispatcher.c(104,13): warning :       |             int
+/usr/include/stdio.h(806,26): message : expected ‘FILE *’ {aka ‘struct _IO_FILE *’} but argument is of type ‘int’
+/usr/include/stdio.h(806,26): message :   806 | extern int pclose (FILE *__stream);
+/usr/include/stdio.h(806,26): message :       |                    ~~~~~~^~~~~~~~
+  EventLoop.c
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning :     8 |  int(*add)(struct Channel* channel,struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning :       |                                           ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning :    10 |  int(*remove)(struct Channel* channel, struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning :       |                                               ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning :    12 |  int(*modify)(struct Channel* channel, struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning :       |                                               ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning :    14 |  int(*dispatch)(struct EventLoop* evLoop,int timeout);
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning :       |                        ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning :    16 |  int(*clear)(struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning :       |                     ^~~~~~~~~
+E:\serverProject\SimpleHttp\EventLoop.c(11,3): warning : implicit declaration of function ‘write’; did you mean ‘fwrite’? [-Wimplicit-function-declaration]
+E:\serverProject\SimpleHttp\EventLoop.c(11,3): warning :    11 |   write(evLoop->socketPair[0], msg, strlen(msg));
+E:\serverProject\SimpleHttp\EventLoop.c(11,3): warning :       |   ^~~~~
+E:\serverProject\SimpleHttp\EventLoop.c(11,3): warning :       |   fwrite
+E:\serverProject\SimpleHttp\EventLoop.c(11,37): warning : implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+E:\serverProject\SimpleHttp\EventLoop.c(11,37): warning :    11 |   write(evLoop->socketPair[0], msg, strlen(msg));
+E:\serverProject\SimpleHttp\EventLoop.c(11,37): warning :       |                                     ^~~~~~
+E:\serverProject\SimpleHttp\EventLoop.c(11,37): warning : incompatible implicit declaration of built-in function ‘strlen’
+E:\serverProject\SimpleHttp\EventLoop.c(4,1): message : include ‘<string.h>’ or provide a declaration of ‘strlen’
+E:\serverProject\SimpleHttp\EventLoop.c(4,1): message :     3 | #include<sys/socket.h>
+E:\serverProject\SimpleHttp\EventLoop.c(4,1): message :   +++ |+#include <string.h>
+E:\serverProject\SimpleHttp\EventLoop.c(4,1): message :     4 | struct EventLoop* eventLoopInit()
+E:\serverProject\SimpleHttp\EventLoop.c(17,2): warning : implicit declaration of function ‘read’; did you mean ‘fread’? [-Wimplicit-function-declaration]
+E:\serverProject\SimpleHttp\EventLoop.c(17,2): warning :    17 |  read(evLoop->socketPair[1], buf, sizeof(buf));
+E:\serverProject\SimpleHttp\EventLoop.c(17,2): warning :       |  ^~~~
+E:\serverProject\SimpleHttp\EventLoop.c(17,2): warning :       |  fread
+E:\serverProject\SimpleHttp\EventLoop.c(26,2): warning : implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+E:\serverProject\SimpleHttp\EventLoop.c(26,2): warning : incompatible implicit declaration of built-in function ‘strcpy’
+E:\serverProject\SimpleHttp\EventLoop.c(26,2): message : include ‘<string.h>’ or provide a declaration of ‘strcpy’
+E:\serverProject\SimpleHttp\EventLoop.c(40,25): warning : passing argument 5 of ‘channelInit’ from incompatible pointer type [-Wincompatible-pointer-types]
+E:\serverProject\SimpleHttp\EventLoop.c(40,25): warning :    40 |   readLocalMessage,NULL,evLoop);
+E:\serverProject\SimpleHttp\EventLoop.c(40,25): warning :       |                         ^~~~~~
+E:\serverProject\SimpleHttp\EventLoop.c(40,25): warning :       |                         |
+E:\serverProject\SimpleHttp\EventLoop.c(40,25): warning :       |                         struct EventLoop *
+E:\serverProject\SimpleHttp\Channel.h(25,17): message : expected ‘handleFunc’ {aka ‘int (*)(void *)’} but argument is of type ‘struct EventLoop *’
+E:\serverProject\SimpleHttp\Channel.h(25,17): message :    25 | struct Channel* channelInit(int fd,int events,handleFunc readFunc,
+E:\serverProject\SimpleHttp\Channel.h(25,17): message :       |                 ^~~~~~~~~~~
+E:\serverProject\SimpleHttp\EventLoop.c(39,28): error : too few arguments to function ‘channelInit’
+E:\serverProject\SimpleHttp\EventLoop.c(39,28): error :    39 |  struct Channel* channel = channelInit(evLoop->socketPair[1],ReadEvent,
+E:\serverProject\SimpleHttp\EventLoop.c(39,28): error :       |                            ^~~~~~~~~~~
+E:\serverProject\SimpleHttp\Channel.h(25,17): message : declared here
+E:\serverProject\SimpleHttp\Channel.h(25,17): message :    25 | struct Channel* channelInit(int fd,int events,handleFunc readFunc,
+E:\serverProject\SimpleHttp\Channel.h(25,17): message :       |                 ^~~~~~~~~~~
+E:\serverProject\SimpleHttp\EventLoop.c(58,24): warning : passing argument 1 of ‘dispatcher->dispatch’ from incompatible pointer type [-Wincompatible-pointer-types]
+E:\serverProject\SimpleHttp\EventLoop.c(58,24): warning :    58 |   dispatcher->dispatch(evLoop, 2);//��ʱʱ��2s
+E:\serverProject\SimpleHttp\EventLoop.c(58,24): warning :       |                        ^~~~~~
+E:\serverProject\SimpleHttp\EventLoop.c(58,24): warning :       |                        |
+E:\serverProject\SimpleHttp\EventLoop.c(58,24): warning :       |                        struct EventLoop *
+E:\serverProject\SimpleHttp\EventLoop.c(58,24): message : expected ‘struct EventLoop *’ but argument is of type ‘struct EventLoop *’
+E:\serverProject\SimpleHttp\EventLoop.c(157,36): warning : passing argument 2 of ‘evLoop->dispatcher->add’ from incompatible pointer type [-Wincompatible-pointer-types]
+E:\serverProject\SimpleHttp\EventLoop.c(157,36): warning :   157 |   evLoop->dispatcher->add(channel, evLoop);
+E:\serverProject\SimpleHttp\EventLoop.c(157,36): warning :       |                                    ^~~~~~
+E:\serverProject\SimpleHttp\EventLoop.c(157,36): warning :       |                                    |
+E:\serverProject\SimpleHttp\EventLoop.c(157,36): warning :       |                                    struct EventLoop *
+E:\serverProject\SimpleHttp\EventLoop.c(157,36): message : expected ‘struct EventLoop *’ but argument is of type ‘struct EventLoop *’
+E:\serverProject\SimpleHttp\EventLoop.c(170,47): warning : passing argument 2 of ‘evLoop->dispatcher->remove’ from incompatible pointer type [-Wincompatible-pointer-types]
+E:\serverProject\SimpleHttp\EventLoop.c(170,47): warning :   170 |  int ret =evLoop->dispatcher->remove(channel, evLoop);
+E:\serverProject\SimpleHttp\EventLoop.c(170,47): warning :       |                                               ^~~~~~
+E:\serverProject\SimpleHttp\EventLoop.c(170,47): warning :       |                                               |
+E:\serverProject\SimpleHttp\EventLoop.c(170,47): warning :       |                                               struct EventLoop *
+E:\serverProject\SimpleHttp\EventLoop.c(170,47): message : expected ‘struct EventLoop *’ but argument is of type ‘struct EventLoop *’
+E:\serverProject\SimpleHttp\EventLoop.c(178,9): warning : comparison between pointer and integer
+E:\serverProject\SimpleHttp\EventLoop.c(178,9): warning :   178 |  if (fd >= channelMap->list[fd]==NULL) {
+E:\serverProject\SimpleHttp\EventLoop.c(178,9): warning :       |         ^~
+E:\serverProject\SimpleHttp\EventLoop.c(178,32): warning : comparison between pointer and integer
+E:\serverProject\SimpleHttp\EventLoop.c(178,32): warning :   178 |  if (fd >= channelMap->list[fd]==NULL) {
+E:\serverProject\SimpleHttp\EventLoop.c(178,32): warning :       |                                ^~
+E:\serverProject\SimpleHttp\EventLoop.c(178,9): warning : suggest parentheses around comparison in operand of ‘==’ [-Wparentheses]
+E:\serverProject\SimpleHttp\EventLoop.c(178,9): warning :   178 |  if (fd >= channelMap->list[fd]==NULL) {
+E:\serverProject\SimpleHttp\EventLoop.c(178,9): warning :       |      ~~~^~~~~~~~~~~~~~~~~~~~~~~
+E:\serverProject\SimpleHttp\EventLoop.c(182,48): warning : passing argument 2 of ‘evLoop->dispatcher->modify’ from incompatible pointer type [-Wincompatible-pointer-types]
+E:\serverProject\SimpleHttp\EventLoop.c(182,48): warning :   182 |  int ret = evLoop->dispatcher->modify(channel, evLoop);
+E:\serverProject\SimpleHttp\EventLoop.c(182,48): warning :       |                                                ^~~~~~
+E:\serverProject\SimpleHttp\EventLoop.c(182,48): warning :       |                                                |
+E:\serverProject\SimpleHttp\EventLoop.c(182,48): warning :       |                                                struct EventLoop *
+E:\serverProject\SimpleHttp\EventLoop.c(182,48): message : expected ‘struct EventLoop *’ but argument is of type ‘struct EventLoop *’
+E:\serverProject\SimpleHttp\EventLoop.c(191,2): warning : implicit declaration of function ‘close’; did you mean ‘pclose’? [-Wimplicit-function-declaration]
+E:\serverProject\SimpleHttp\EventLoop.c(191,2): warning :   191 |  close(channel->fd);
+E:\serverProject\SimpleHttp\EventLoop.c(191,2): warning :       |  ^~~~~
+E:\serverProject\SimpleHttp\EventLoop.c(191,2): warning :       |  pclose
+E:\serverProject\SimpleHttp\EventLoop.c(18,1): warning : control reaches end of non-void function [-Wreturn-type]
+E:\serverProject\SimpleHttp\EventLoop.c(18,1): warning :    18 | }
+E:\serverProject\SimpleHttp\EventLoop.c(18,1): warning :       | ^
+  HttpRequest.c
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning :     8 |  int(*add)(struct Channel* channel,struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning :       |                                           ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning :    10 |  int(*remove)(struct Channel* channel, struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning :       |                                               ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning :    12 |  int(*modify)(struct Channel* channel, struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning :       |                                               ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning :    14 |  int(*dispatch)(struct EventLoop* evLoop,int timeout);
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning :       |                        ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning :    16 |  int(*clear)(struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning :       |                     ^~~~~~~~~
+E:\serverProject\SimpleHttp\HttpRequest.c(73,19): warning : initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+E:\serverProject\SimpleHttp\HttpRequest.c(73,19): warning :    73 |     char* space = end;
+E:\serverProject\SimpleHttp\HttpRequest.c(73,19): warning :       |                   ^~~
+E:\serverProject\SimpleHttp\HttpRequest.c(76,17): warning : implicit declaration of function ‘memmem’; did you mean ‘memset’? [-Wimplicit-function-declaration]
+E:\serverProject\SimpleHttp\HttpRequest.c(76,17): warning :    76 |         space = memmem(start, end - start, sub, strlen(sub));
+E:\serverProject\SimpleHttp\HttpRequest.c(76,17): warning :       |                 ^~~~~~
+E:\serverProject\SimpleHttp\HttpRequest.c(76,17): warning :       |                 memset
+E:\serverProject\SimpleHttp\HttpRequest.c(76,15): warning : assignment to ‘char *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+E:\serverProject\SimpleHttp\HttpRequest.c(76,15): warning :    76 |         space = memmem(start, end - start, sub, strlen(sub));
+E:\serverProject\SimpleHttp\HttpRequest.c(76,15): warning :       |               ^
+E:\serverProject\SimpleHttp\HttpRequest.c(79,18): warning : conversion from ‘long int’ to ‘int’ may change value [-Wconversion]
+E:\serverProject\SimpleHttp\HttpRequest.c(79,18): warning :    79 |     int length = space - start;
+E:\serverProject\SimpleHttp\HttpRequest.c(79,18): warning :       |                  ^~~~~
+E:\serverProject\SimpleHttp\HttpRequest.c(80,38): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\HttpRequest.c(80,38): warning :    80 |     char* tmp = (char*)malloc(length + 1);
+E:\serverProject\SimpleHttp\HttpRequest.c(80,38): warning :       |                               ~~~~~~~^~~
+E:\serverProject\SimpleHttp\HttpRequest.c(81,25): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\HttpRequest.c(81,25): warning :    81 |     strncpy(tmp, start, length);
+E:\serverProject\SimpleHttp\HttpRequest.c(81,25): warning :       |                         ^~~~~~
+E:\serverProject\SimpleHttp\HttpRequest.c(94,20): warning : conversion from ‘long int’ to ‘int’ may change value [-Wconversion]
+E:\serverProject\SimpleHttp\HttpRequest.c(94,20): warning :    94 |     int lineSize = end - start;
+E:\serverProject\SimpleHttp\HttpRequest.c(94,20): warning :       |                    ^~~
+E:\serverProject\SimpleHttp\HttpRequest.c(140,6): error : redefinition of ‘parseHttpRequestLine’
+E:\serverProject\SimpleHttp\HttpRequest.c(140,6): error :   140 | bool parseHttpRequestLine(struct HttpRequest* request, struct Buffer* readBuf)
+E:\serverProject\SimpleHttp\HttpRequest.c(140,6): error :       |      ^~~~~~~~~~~~~~~~~~~~
+E:\serverProject\SimpleHttp\HttpRequest.c(87,6): message : previous definition of ‘parseHttpRequestLine’ was here
+E:\serverProject\SimpleHttp\HttpRequest.c(87,6): message :    87 | bool parseHttpRequestLine(struct HttpRequest* request, struct Buffer* readBuf)
+E:\serverProject\SimpleHttp\HttpRequest.c(87,6): message :       |      ^~~~~~~~~~~~~~~~~~~~
+E:\serverProject\SimpleHttp\HttpRequest.c(147,20): warning : conversion from ‘long int’ to ‘int’ may change value [-Wconversion]
+E:\serverProject\SimpleHttp\HttpRequest.c(147,20): warning :   147 |     int lineSize = end - start;
+E:\serverProject\SimpleHttp\HttpRequest.c(147,20): warning :       |                    ^~~
+E:\serverProject\SimpleHttp\HttpRequest.c(200,24): warning : conversion from ‘long int’ to ‘int’ may change value [-Wconversion]
+E:\serverProject\SimpleHttp\HttpRequest.c(200,24): warning :   200 |         int lineSize = end - start;
+E:\serverProject\SimpleHttp\HttpRequest.c(200,24): warning :       |                        ^~~
+E:\serverProject\SimpleHttp\HttpRequest.c(202,24): warning : initialization of ‘char *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+E:\serverProject\SimpleHttp\HttpRequest.c(205,47): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘long int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\HttpRequest.c(205,47): warning :   205 |             char* key = malloc(middle - start + 1);
+E:\serverProject\SimpleHttp\HttpRequest.c(205,47): warning :       |                                ~~~~~~~~~~~~~~~^~~
+E:\serverProject\SimpleHttp\HttpRequest.c(206,40): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘long int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\HttpRequest.c(206,40): warning :   206 |             strncpy(key, start, middle - start);
+E:\serverProject\SimpleHttp\HttpRequest.c(206,40): warning :       |                                 ~~~~~~~^~~~~~~
+E:\serverProject\SimpleHttp\HttpRequest.c(209,51): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘long int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\HttpRequest.c(209,51): warning :   209 |             char* value = malloc(end - middle - 2 + 1);
+E:\serverProject\SimpleHttp\HttpRequest.c(209,51): warning :       |                                  ~~~~~~~~~~~~~~~~~^~~
+E:\serverProject\SimpleHttp\HttpRequest.c(210,53): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘long int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\HttpRequest.c(210,53): warning :   210 |             strncpy(value, middle + 2, end - middle - 2);
+E:\serverProject\SimpleHttp\HttpRequest.c(210,53): warning :       |                                        ~~~~~~~~~~~~~^~~
+E:\serverProject\SimpleHttp\HttpRequest.c(274,5): warning : implicit declaration of function ‘decodeMsg’ [-Wimplicit-function-declaration]
+E:\serverProject\SimpleHttp\HttpRequest.c(274,5): warning :   274 |     decodeMsg(request->url, request->url);
+E:\serverProject\SimpleHttp\HttpRequest.c(274,5): warning :       |     ^~~~~~~~~
+E:\serverProject\SimpleHttp\HttpRequest.c(340,19): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+E:\serverProject\SimpleHttp\HttpRequest.c(340,19): warning :   340 |         int len = read(fd, buf, sizeof buf);
+E:\serverProject\SimpleHttp\HttpRequest.c(340,19): warning :       |                   ^~~~
+  HttpResponse.c
+E:\serverProject\SimpleHttp\HttpResponse.c(10,53): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\HttpResponse.c(10,53): warning :    10 |  response->headers = (struct ResponseHeader*)malloc(size);
+E:\serverProject\SimpleHttp\HttpResponse.c(10,53): warning :       |                                                     ^~~~
+E:\serverProject\SimpleHttp\HttpResponse.c(13,27): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\HttpResponse.c(13,27): warning :    13 |  bzero(response->headers, size);
+E:\serverProject\SimpleHttp\HttpResponse.c(13,27): warning :       |                           ^~~~
+  main.c
+E:\serverProject\SimpleHttp\main.c(11,27): warning : conversion from ‘int’ to ‘short unsigned int’ may change value [-Wconversion]
+E:\serverProject\SimpleHttp\main.c(11,27): warning :    11 |     unsigned short port = atoi(argv[1]);
+E:\serverProject\SimpleHttp\main.c(11,27): warning :       |                           ^~~~
+E:\serverProject\SimpleHttp\main.c(11,20): warning : unused variable ‘port’ [-Wunused-variable]
+E:\serverProject\SimpleHttp\main.c(11,20): warning :    11 |     unsigned short port = atoi(argv[1]);
+E:\serverProject\SimpleHttp\main.c(11,20): warning :       |                    ^~~~
+  PollDispatcher.c
+E:\serverProject\SimpleHttp\PollDispatcher.c(48,26): warning : conversion from ‘int’ to ‘short int’ may change value [-Wconversion]
+E:\serverProject\SimpleHttp\PollDispatcher.c(48,26): warning :    48 |    data->fds[i].events = events;
+E:\serverProject\SimpleHttp\PollDispatcher.c(48,26): warning :       |                          ^~~~~~
+E:\serverProject\SimpleHttp\PollDispatcher.c(89,26): warning : conversion from ‘int’ to ‘short int’ may change value [-Wconversion]
+E:\serverProject\SimpleHttp\PollDispatcher.c(89,26): warning :    89 |    data->fds[i].events = events;
+E:\serverProject\SimpleHttp\PollDispatcher.c(89,26): warning :       |                          ^~~~~~
+E:\serverProject\SimpleHttp\PollDispatcher.c(101,41): warning : conversion to ‘nfds_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\PollDispatcher.c(101,41): warning :   101 |  int count = poll(data->fds, data->maxfd+1,timeout * 1000);
+E:\serverProject\SimpleHttp\PollDispatcher.c(101,41): warning :       |                              ~~~~~~~~~~~^~
+  SelectDispatcher.c
+  Server.c
+E:\serverProject\SimpleHttp\Server.c(116,16): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+E:\serverProject\SimpleHttp\Server.c(116,16): warning :   116 |  while ((len = recv(info->fd,tmp, sizeof tmp, 0)) > 0) {
+E:\serverProject\SimpleHttp\Server.c(116,16): warning :       |                ^~~~
+E:\serverProject\SimpleHttp\Server.c(118,27): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\Server.c(118,27): warning :   118 |    memcpy(buf+total, tmp, len);
+E:\serverProject\SimpleHttp\Server.c(118,27): warning :       |                           ^~~
+E:\serverProject\SimpleHttp\Server.c(126,16): warning : conversion from ‘long int’ to ‘int’ may change value [-Wconversion]
+E:\serverProject\SimpleHttp\Server.c(126,16): warning :   126 |   int reqLen = pt - buf;
+E:\serverProject\SimpleHttp\Server.c(126,16): warning :       |                ^~
+E:\serverProject\SimpleHttp\Server.c(178,52): warning : conversion from ‘__off_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+E:\serverProject\SimpleHttp\Server.c(178,52): warning :   178 |   sendHeadmsg(cfd, 200, "OK", getFileType(file), st.st_size);
+E:\serverProject\SimpleHttp\Server.c(178,52): warning :       |                                                  ~~^~~~~~~~
+E:\serverProject\SimpleHttp\Server.c(217,13): warning : conversion from ‘__off_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+E:\serverProject\SimpleHttp\Server.c(217,13): warning :   217 |  int size = file_stat.st_size;
+E:\serverProject\SimpleHttp\Server.c(217,13): warning :       |             ^~~~~~~~~
+E:\serverProject\SimpleHttp\Server.c(219,40): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\Server.c(219,40): warning :   219 |   int ret = sendfile(cfd, fd, &offset, size);
+E:\serverProject\SimpleHttp\Server.c(219,40): warning :       |                                        ^~~~
+E:\serverProject\SimpleHttp\Server.c(219,13): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+E:\serverProject\SimpleHttp\Server.c(219,13): warning :   219 |   int ret = sendfile(cfd, fd, &offset, size);
+E:\serverProject\SimpleHttp\Server.c(219,13): warning :       |             ^~~~~~~~
+  TcpConnection.c
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning :     8 |  int(*add)(struct Channel* channel,struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning :       |                                           ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning :    10 |  int(*remove)(struct Channel* channel, struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning :       |                                               ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning :    12 |  int(*modify)(struct Channel* channel, struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning :       |                                               ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning :    14 |  int(*dispatch)(struct EventLoop* evLoop,int timeout);
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning :       |                        ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning :    16 |  int(*clear)(struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning :       |                     ^~~~~~~~~
+E:\serverProject\SimpleHttp\TcpConnection.c(68,4): warning : implicit declaration of function ‘bufferDestroy’; did you mean ‘bufferDestory’? [-Wimplicit-function-declaration]
+E:\serverProject\SimpleHttp\TcpConnection.c(68,4): warning :    68 |    bufferDestroy(conn->readBuf);
+E:\serverProject\SimpleHttp\TcpConnection.c(68,4): warning :       |    ^~~~~~~~~~~~~
+E:\serverProject\SimpleHttp\TcpConnection.c(68,4): warning :       |    bufferDestory
+E:\serverProject\SimpleHttp\TcpConnection.c(70,4): warning : implicit declaration of function ‘httpRequestDestroy’; did you mean ‘httpRequestResetEx’? [-Wimplicit-function-declaration]
+E:\serverProject\SimpleHttp\TcpConnection.c(70,4): warning :    70 |    httpRequestDestroy(conn->request);
+E:\serverProject\SimpleHttp\TcpConnection.c(70,4): warning :       |    ^~~~~~~~~~~~~~~~~~
+E:\serverProject\SimpleHttp\TcpConnection.c(70,4): warning :       |    httpRequestResetEx
+E:\serverProject\SimpleHttp\TcpConnection.c(75,2): warning : implicit declaration of function ‘Debug’ [-Wimplicit-function-declaration]
+  TcpServer.c
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning :     8 |  int(*add)(struct Channel* channel,struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning :       |                                           ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning :    10 |  int(*remove)(struct Channel* channel, struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning :       |                                               ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning :    12 |  int(*modify)(struct Channel* channel, struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning :       |                                               ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning :    14 |  int(*dispatch)(struct EventLoop* evLoop,int timeout);
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning :       |                        ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning :    16 |  int(*clear)(struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning :       |                     ^~~~~~~~~
+  ThreadPool.c
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning :     8 |  int(*add)(struct Channel* channel,struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning :       |                                           ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning :    10 |  int(*remove)(struct Channel* channel, struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning :       |                                               ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning :    12 |  int(*modify)(struct Channel* channel, struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning :       |                                               ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning :    14 |  int(*dispatch)(struct EventLoop* evLoop,int timeout);
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning :       |                        ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning :    16 |  int(*clear)(struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning :       |                     ^~~~~~~~~
+E:\serverProject\SimpleHttp\ThreadPool.c(5,48): warning : implicit declaration of function ‘maloc’; did you mean ‘malloc’? [-Wimplicit-function-declaration]
+E:\serverProject\SimpleHttp\ThreadPool.c(5,48): warning :     5 |  struct ThreadPool* pool = (struct ThreadPool*)maloc(sizeof(struct ThreadPool));
+E:\serverProject\SimpleHttp\ThreadPool.c(5,48): warning :       |                                                ^~~~~
+E:\serverProject\SimpleHttp\ThreadPool.c(5,48): warning :       |                                                malloc
+E:\serverProject\SimpleHttp\ThreadPool.c(5,28): warning : cast to pointer from integer of different size [-Wint-to-pointer-cast]
+E:\serverProject\SimpleHttp\ThreadPool.c(5,28): warning :     5 |  struct ThreadPool* pool = (struct ThreadPool*)maloc(sizeof(struct ThreadPool));
+E:\serverProject\SimpleHttp\ThreadPool.c(5,28): warning :       |                            ^
+E:\serverProject\SimpleHttp\ThreadPool.c(10,78): warning : conversion to ‘long unsigned int’ from ‘int’ may change the sign of the result [-Wsign-conversion]
+E:\serverProject\SimpleHttp\ThreadPool.c(10,78): warning :    10 |  pool->workerThreads= (struct WorkerThread*)maloc(sizeof(struct WorkerThread)*count);
+E:\serverProject\SimpleHttp\ThreadPool.c(10,78): warning :       |                                                                              ^
+E:\serverProject\SimpleHttp\ThreadPool.c(10,23): warning : cast to pointer from integer of different size [-Wint-to-pointer-cast]
+E:\serverProject\SimpleHttp\ThreadPool.c(10,23): warning :    10 |  pool->workerThreads= (struct WorkerThread*)maloc(sizeof(struct WorkerThread)*count);
+E:\serverProject\SimpleHttp\ThreadPool.c(10,23): warning :       |                       ^
+E:\serverProject\SimpleHttp\ThreadPool.c(41,15): warning : operation on ‘pool->index’ may be undefined [-Wsequence-point]
+E:\serverProject\SimpleHttp\ThreadPool.c(41,15): warning :    41 |   pool->index = ++pool->index % pool -> threadNum;//ȷ�����ᳬ����Χ
+E:\serverProject\SimpleHttp\ThreadPool.c(41,15): warning :       |   ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  WorkerThread.c
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning :     8 |  int(*add)(struct Channel* channel,struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(8,43): warning :       |                                           ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning :    10 |  int(*remove)(struct Channel* channel, struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(10,47): warning :       |                                               ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning :    12 |  int(*modify)(struct Channel* channel, struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(12,47): warning :       |                                               ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning :    14 |  int(*dispatch)(struct EventLoop* evLoop,int timeout);
+E:\serverProject\SimpleHttp\Dispatcher.h(14,24): warning :       |                        ^~~~~~~~~
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning : ‘struct EventLoop’ declared inside parameter list will not be visible outside of this definition or declaration
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning :    16 |  int(*clear)(struct EventLoop* evLoop);
+E:\serverProject\SimpleHttp\Dispatcher.h(16,21): warning :       |                     ^~~~~~~~~
